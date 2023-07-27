@@ -1,0 +1,40 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.Logo{
+    width: 10rem;
+    height: 3rem;
+    padding: 3rem;
+    padding-top: 1.5rem;
+}
+.header-menue{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    color: white;
+    padding: 20px;
+}
+.header-menue>li{
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.header-menue>li:hover{
+    color: orangered;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:768px){
+    .header>:nth-child(2){
+        position: fixed;
+        right: 9rem;
+        z-index: 99;
+    }
+    .header-menue{
+        flex-direction: column;
+        background-color: rgb(31, 32, 32);
+    }
+}

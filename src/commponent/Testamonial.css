@@ -1,0 +1,156 @@
+.testamonial{
+    display: flex;
+    
+   
+    background-color: rgb(44, 44, 44);
+    
+    text-align: center;
+    padding: 20px 0px 80px 0px;
+    margin-bottom: 35px;
+}
+.left-test{
+   padding: 0px 0px 0px 15px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: white;
+    
+}
+.left-test>:nth-child(1){
+    font-size: 15px;
+    padding: 5px 0px;
+    width: fit-content;
+    color: white;
+    text-transform: none;
+    
+}
+.left-test>:nth-child(2){
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+    width: fit-content;
+    
+    
+}
+
+.right-test{
+    flex: 1 ;
+    position: relative;
+    
+}
+.test-name{
+    text-transform: none;
+    color: white;
+    padding: 15px 0px;
+    
+}
+.span-review{
+    font-size: 25px;
+    width: 500px;
+}
+.person-test{
+    position: absolute;
+    width: 13rem;
+    height: 13rem;
+    object-fit:cover;
+    right: 3rem;
+    top: 8rem;
+}
+.right-test>:nth-child(1){
+    position: absolute;
+    width: 13rem;
+    height: 13rem;
+    border: 2px solid orangered;
+    right: 4rem;
+    top: 6rem;
+}
+.right-test>:nth-child(2){
+    position: absolute;
+    width: 13rem;
+    height: 13rem;
+    border: 2px solid orangered;
+    right: 2rem;
+    top: 9rem;
+    
+    
+    background-color: orangered;
+
+}
+.arrows{
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    top: 270px;
+    right: 30rem;
+
+}
+.arrows>img{
+    width: 1.5rem;
+    cursor: pointer;
+}
+    
+.blur-test{
+    width: 30rem;
+    height: 13rem;
+    bottom: 0;
+    left: 2%;
+    background-color: orangered;
+    filter: blur(200px);
+
+}
+@media screen and (max-width:768px)
+    
+{
+    .testamonial{
+        flex-direction: column;
+        
+    }
+    .left-test>:nth-child(2)
+    {
+        font-size: small;
+    }
+    .span-review{
+        font-size: 15px;
+        width: 427px;
+    }
+    .right-test{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .right-test>div{
+        position: relative;
+        display: none;
+    }
+    .right-test>img{
+        top: 0;
+        right:0;
+        position: relative;
+        align-self: center;
+    }
+    .right-test>:last-child{
+        display: block;
+        bottom: 0;
+        left: 0;
+
+    }
+    .blur-test{
+        width: 10rem;
+    }
+    .arrows{
+        display: flex;
+        gap: 1rem;
+        position: absolute;
+        bottom: 0rem;
+        right: 30rem;
+        top: 2rem;
+    
+    }
+    .arrows>img{
+        width: 1.5rem;
+        cursor: pointer;
+    }
+}
